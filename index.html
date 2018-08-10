@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Museo Ganot-Peschard</title>
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/custom_liner.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat" rel="stylesheet">
+    <script src="js/seamless/seamless.parent.js"></script>
+</head>
+<!--WOW! Que haces buscando por aquí curioso?
+    Sitio desarrollado con cariño y sin esperar nada a cambio. 
+    XOTRON, 2018-->
+<body style="background-color: #F8F8F8">    
+    <!--MODAL CONTACTO-->
+    <div id="modal-close-default" uk-modal>
+        <div id="contact" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <h2 class="uk-modal-title uk-text-center">Información</h2>
+                <div class="uk-column-1-2 uk-column-divider">
+                    <ul class="uk-list">
+                        <li class="uk-text-bold">Dirección</li>
+                        <li>Zaragoza 315 Sur, Zona Centro</li>
+                        <hr class="uk-nav-divider">
+                        <li class="uk-text-bold">Horario</li>
+                        <li>De martes a domingo de 9:30 a 19:00 hrs.</li>
+                        <hr class="uk-nav-divider">
+                        <li class="uk-text-bold">Costo</li>
+                        <li>$10.00</li>
+                        <hr class="uk-nav-divider">
+                        <li class="uk-text-bold">Teléfono</li>
+                        <li>(618) 813 10 47</li>
+                        <hr class="uk-nav-divider">
+                        <li class="uk-text-bold">Mapa</li>
+                    </ul>
+                    <div id="map">
+                        <script src="js/map.js"></script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6YIN1OhNoeS6o0hegdVOw8TbOlZejO_I&callback=initMap">
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-flex uk-flex-center" style="background-color: #F8F8F8">
+        <br>
+        <div class="uk-container uk-align-center">
+            <img class="uk-align-left" src="img/logo_color.JPG" width="195vh">
+            <h1 class="uk-heading-primary uk-display-inline-block">Museo de Arqueología </h1>
+            <h1 class="uk-heading-bullet">Ganot-Peschard</h1>
+            <hr class="uk-nav-divider">
+        </div>
+    </div>
+
+    <div class="uk-section" style="background-color: #1b3647">
+        <div class="uk-container">
+            <div class="uk-child-width-1-2" uk-grid>
+                <div class="uk-flex uk-flex-auto">
+                    <div class="uk-child-width-1-3@m uk-grid-match uk-margin-auto" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+                                style="background-color: #166ba2">
+                                <h3 class="uk-card-title">Aprende más</h3>
+                                <p>Aprende un poco mas sobre el Museo de Arqueología de Durango Ganot-Peschard</p>
+                                <a class="uk-position-bottom-right" href="info.html" target="navegacion" onclick="javascript:location.href='#iframe'" uk-icon="icon: chevron-right; ratio: 2"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-fade; repeat: true"
+                                style="background-color:  #e9931a">
+                                <h3 class="uk-card-title">Galerías</h3>
+                                <p>Un vistazo rápido a nuestras exposiciones.</p>
+                                <a class="uk-position-bottom-right" href="galeria.html" target="navegacion" onclick="javascript:location.href='#iframe'" uk-icon="icon: chevron-right; ratio: 2"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-hover uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true"
+                                style="background-color: #d06503">
+                                <h3 class="uk-card-title">Encuéntranos</h3>
+                                <p>Precios de entrada, horarios y un útil mini-mapa.</p>
+                                <a class="uk-position-bottom-right" href="#contact" uk-toggle uk-icon="icon: chevron-right; ratio: 2"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            window.seamless(document.getElementById('iframe'));
+        };
+    </script>
+
+    <iframe src="info.html" name="navegacion" id="iframe"></iframe>
+
+</body>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+
+</html>
